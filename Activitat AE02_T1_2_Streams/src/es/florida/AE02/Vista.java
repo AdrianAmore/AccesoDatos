@@ -1,6 +1,7 @@
 package es.florida.AE02;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -94,6 +95,9 @@ public class Vista {
 	
 	public JTextArea getTextAreaModificado() {
 		return textArea_Modificado;
+	}
+	public void mostrarMensaje(String mensaje) {
+		JOptionPane.showMessageDialog(new JFrame(), mensaje, "INFO", JOptionPane.INFORMATION_MESSAGE);
 	}
 
 }

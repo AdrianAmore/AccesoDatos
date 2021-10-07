@@ -1,10 +1,4 @@
-package es.florida.AE02;
-
-import es.florida.AE02.Controlador;
-import es.florida.AE02.Modelo;
-import es.florida.AE02.Vista;
-
-
+package pruebaes.florida;
 
 public class Principal {
 
@@ -12,6 +6,7 @@ public class Principal {
 		Modelo modelo = new Modelo();
 		Vista vista = new Vista();
 		Controlador controlador = new Controlador(modelo, vista);
+
 	}
 
 }
