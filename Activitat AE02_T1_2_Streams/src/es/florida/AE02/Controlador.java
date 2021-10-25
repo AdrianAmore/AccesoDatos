@@ -7,7 +7,7 @@ public class Controlador {
 
 	private Modelo modelo;
 	private Vista vista;
-	private ActionListener actionListenerBtnBuscar, actionListenerBtnReemplazar;
+	private ActionListener actionListenerBtnBuscar, actionListenerBtnRemplazar;
 
 	Controlador(Modelo modelo, Vista vista) {
 		this.modelo = modelo;
@@ -30,6 +30,15 @@ public class Controlador {
 			}
 		};
 		vista.getBtnBuscar().addActionListener(actionListenerBtnBuscar);
+		
+		
+		actionListenerBtnRemplazar = new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String modified = modelo.remplazar(vista.getTextFieldBuscar().getText(), vista.getTextFieldReemplazar().getText());
+				vista.getTextAreaModificado().setText(modified);
+			}
+		};
+		vista.getBtnReemplazar().addActionListener(actionListenerBtnRemplazar);
 	}
 
 }
