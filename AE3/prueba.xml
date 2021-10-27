@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE llibres SYSTEM "roles.dtd">
+<llibres>
+    <llibre id="6">
+        <titol>a</titol>
+        <autor>a</autor>
+        <any-publi>3000</any-publi>
+        <editorial>adas</editorial>
+        <n-pag>50</n-pag>
+    </llibre>
+</llibres>

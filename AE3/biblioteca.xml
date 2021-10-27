@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<llibres>
+    <llibre id="0">
+        <titol>El italiano</titol>
+        <autor>Arturo Perez</autor>
+        <any-publi>2021</any-publi>
+        <editorial>Alfaguara</editorial>
+        <n-pag>368</n-pag>
+    </llibre>
+    <llibre id="1">
+        <titol>De ninguna parte</titol>
+        <autor>Julia Naavarro</autor>
+        <any-publi>2021</any-publi>
+        <editorial>Plaza</editorial>
+        <n-pag>389</n-pag>
+    </llibre>
+    <llibre id="2">
+        <titol>Hasta donde termina el mar</titol>
+        <autor>Alaitz Leceaga</autor>
+        <any-publi>2021</any-publi>
+        <editorial>Planeta</editorial>
+        <n-pag>512</n-pag>
+    </llibre>
+    <llibre id="3">
+        <titol>Primera persona del singular</titol>
+        <autor>Haruki Murakami</autor>
+        <any-publi>2021</any-publi>
+        <editorial>Tusquets</editorial>
+        <n-pag>288</n-pag>
+    </llibre>
+    <llibre id="4">
+        <titol>Boulevard</titol>
+        <autor>Salvador Mojarraz</autor>
+        <any-publi>2021</any-publi>
+        <editorial>Naranja</editorial>
+        <n-pag>316</n-pag>
+    </llibre>
+</llibres>
