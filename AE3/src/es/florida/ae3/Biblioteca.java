@@ -95,7 +95,8 @@ public class Biblioteca {
 				try {
 					borrarLlibre(sc.nextInt());
 					Thread.sleep(100);
-					System.out.println("Llibre borrat amb exit!\n\rATENCIÓ, ELS INDEX DELS LLIBRES HAN CAMBIAT! Comprovar amb l'opció 1");
+					System.out.println(
+							"Llibre borrat amb exit!\n\rATENCIÓ, ELS INDEX DELS LLIBRES HAN CAMBIAT! Comprovar amb l'opció 1");
 				} catch (Exception e) {
 					System.err.println("Error al borrar el llibre!");
 					e.printStackTrace();
@@ -112,6 +113,18 @@ public class Biblioteca {
 		sc.close();
 	}
 
+	
+	
+	/*
+	 * Nom: actualitzaLlibre 
+	 * Parametres: int:identificador 
+	 * Retorna: void 
+	 * 
+	 * Descripció:
+	 * Rep per paràmetre l'identificador del llibre que es vol editar, després pregunta al usuari les noves dades del llibre. 
+	 * Recupera tota la llista de llibres y cambia el llibre de la posició de l'identificador per uno nou.
+	 * Escriu un xml amb tota la llista de llibres.
+	 */
 	static void actualitzaLlibre(int identificador) {
 		Document dom;
 		Element e = null;
@@ -181,6 +194,15 @@ public class Biblioteca {
 		}
 	}
 
+	/*
+	 * Nom: crearLlibre 
+	 * Parametres: Llibre:llibre
+	 * Retorna: int:identificador 
+	 * 
+	 * Descripció:
+	 * Rep per paràmetre un llibre previament creat, recupera tota la llista de llibres y afegeix el nou llibre a la posició final
+	 * de la llista. Escriu un xml amb tota la llista de llibres.
+	 */
 	static int crearLlibre(Llibre llibre) {
 		Document dom;
 		Element e = null;
@@ -241,6 +263,14 @@ public class Biblioteca {
 		return llibre.getIdentificador();
 	}
 
+	/*
+	 * Nom: mostrarLlibre 
+	 * Parametres: Llibre:llibre
+	 * Retorna: void 
+	 * 
+	 * Descripció:
+	 * Rep per paràmetre un llibre i mostra tota la informació d'aquest per consola.
+	 */
 	static void mostrarLlibre(Llibre llibre) {
 		System.out.println("");
 		System.out.println("Id: " + llibre.getIdentificador());
@@ -251,6 +281,15 @@ public class Biblioteca {
 		System.out.println("Numero de pàgines: " + llibre.getNumPag());
 	}
 
+	/*
+	 * Nom: recuperarLlibre 
+	 * Parametres: int:identificador
+	 * Retorna: Llibre:libro
+	 * 
+	 * Descripció:
+	 * Rep per parametre l'identificador del llibre que es vol obtindre, llig les dades del xml y crea un nou llibre amb aquestes
+	 * dresprés el retorna
+	 */
 	static Llibre recuperarLlibre(int identificador) {
 		Llibre libro = null;
 		try {
@@ -278,6 +317,17 @@ public class Biblioteca {
 
 	}
 
+	
+	
+	/*
+	 * Nom: borrarLlibre 
+	 * Parametres: int:identificador
+	 * Retorna: void
+	 * 
+	 * Descripció:
+	 * Rep per parametre l'identificador del llibre que es vol borrar, recupera tota la llista de llibres y borra el llibre de
+	 * la posició de l'identificador, després reescriu el xml amb els nous identificadors
+	 */
 	static void borrarLlibre(int identificador) {
 		Document dom;
 		Element e = null;
@@ -338,6 +388,14 @@ public class Biblioteca {
 		}
 	}
 
+	/*
+	 * Nom: recuperarTots 
+	 * Parametres: no rep parametres
+	 * Retorna: ArrayList<Llibre>:llibres
+	 * 
+	 * Descripció:
+	 * Llig tot l'arxiu xml y va creant llibres amb les dades, després els afegeix a una Arraylist y la retorna.
+	 */
 	static ArrayList<Llibre> recuperarTots() {
 
 		ArrayList<Llibre> llibres = new ArrayList<Llibre>();
