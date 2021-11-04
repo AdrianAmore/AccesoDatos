@@ -10,7 +10,6 @@
     <fullyQualifiedTypeName name="es.florida.AE02.Controlador"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="javax.lang.model.element.Element"/>
     <fullyQualifiedTypeName name="javax.swing.text.Document"/>
     <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
@@ -29,4 +28,8 @@
     <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.xpath.XPath"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.security.utils.XPathFactory"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="jdk.internal.access.JavaAWTAccess"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
