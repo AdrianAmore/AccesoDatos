@@ -13,7 +13,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
 public class App {
-
+	
 	public static void main(String[] args) throws InterruptedException {
 		// Carrega la configuracio i crea un session factory
 		Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
